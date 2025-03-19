@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fuentes actualizadas -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Amigo Mágico</title>
+</head>
+
+<body>
+    <main class="main-content">
+        <header class="header-banner">
+            <h1 class="main-title">🎁 Amigo Mágico</h1>
+            <img src="assets/magic-gift.png" alt="Ícono de regalo mágico" style="width: 120px;">
+        </header>
+        
+        <section class="input-section">
+            <h2 class="section-title">¡Agrega a los participantes!</h2>
+            
+            <div class="input-wrapper">
+                <input type="text" id="amigo" class="input-name" placeholder="Ej: Ana Pérez">
+                <button class="button-add" onclick="agregarAmigo()">
+                    <span>✨ Añadir</span>
+                </button>
+            </div>
+
+            <ul id="listaAmigos" class="name-list"></ul>
+            
+            <div id="resultado" class="result-list"></div>
+
+            <div class="button-container">
+                <button class="button-draw" onclick="sortearAmigo()">
+                    <!-- SVG integrado -->
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
+                    </svg>
+                    ¡Revelar el Misterio!
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

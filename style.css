@@ -1,0 +1,148 @@
+:root {
+    --color-primary: #6C5CE7;
+    --color-secondary: #F8F9FA;
+    --color-accent: #FF7675;
+    --color-dark: #2D3436;
+    --gradient-bg: linear-gradient(135deg, #6C5CE7 0%, #84a9ff 100%);
+    --font-title: 'Poppins', sans-serif;
+    --font-text: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    height: 100vh;
+    background: var(--gradient-bg);
+    font-family: var(--font-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.header-banner {
+    padding: 30px;
+    text-align: center;
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+.main-title {
+    font-family: var(--font-title);
+    color: var(--color-dark);
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.input-section {
+    padding: 30px;
+}
+
+.section-title {
+    font-family: var(--font-title);
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.input-wrapper {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.input-name {
+    flex: 1;
+    padding: 15px 25px;
+    border: 2px solid var(--color-primary);
+    border-radius: 15px;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.input-name:focus {
+    box-shadow: 0 0 10px rgba(108, 92, 231, 0.3);
+}
+
+.button-add {
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+.button-add:hover {
+    background: #5b4bc4;
+    transform: translateY(-2px);
+}
+
+.name-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.name-list li {
+    background: var(--color-secondary);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+}
+
+.name-list li::before {
+    content: "🎁";
+    margin-right: 8px;
+}
+
+.button-draw {
+    width: 100%;
+    background: var(--color-accent);
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button-draw:hover {
+    background: #e65a5a;
+    transform: scale(1.02);
+}
+
+.result-list {
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    text-align: center;
+    animation: popIn 0.5s ease;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}

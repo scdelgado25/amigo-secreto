@@ -26,4 +26,4 @@ https://github.com/scdelgado25/amigo-secreto.git
 - Git & GitHub  
 
 ## 📄 Licencia  
-MIT License | Hecho con ❤️ por [Tu Nombre]
+MIT License | Hecho con ❤️ por Santiago
